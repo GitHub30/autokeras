@@ -10,7 +10,7 @@ setup(
     author='Haifeng Jin',
     author_email='jhfjhfj1@gmail.com',
     url='http://autokeras.com',
-    download_url='https://github.com/jhfjhfj1/autokeras/archive/0.2.4.tar.gz',
+    download_url='https://github.com/GitHub30/autokeras/archive/0.2.4.1.tar.gz',
     keywords=['automl'],  # arbitrary keywords
     classifiers=[]
 )
