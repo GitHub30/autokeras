@@ -187,10 +187,6 @@ class Searcher:
                 raise TimeoutError
         except (multiprocessing.TimeoutError, TimeoutError) as e:
             raise TimeoutError from e
-        finally:
-            # terminate and join the subprocess to prevent any resource leak
-            pool.terminate()
-            pool.join()
 
         self.add_model(metric_value, loss, graph, model_id)
         self.search_tree.add_child(father_id, model_id)
