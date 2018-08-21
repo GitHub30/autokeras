@@ -182,7 +182,7 @@ class Searcher:
                     print(new_graph.operation_history)
             remaining_time = timeout - (time.time() - start_time)
             if remaining_time > 0:
-                metric_value, loss, graph = train_results.get(timeout=remaining_time)[0]
+                metric_value, loss, graph = train_results
             else:
                 raise TimeoutError
         except (multiprocessing.TimeoutError, TimeoutError) as e:
